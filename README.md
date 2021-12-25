@@ -60,3 +60,20 @@ Codes for data preprocessing before creating models by using Statistics knowlege
       - 用于处理GDP数据处理：国家统计局上官方只有季度数据，希望用插值法将季度GDP数据转为月度GDP数据
          - 注：效果不是很好，并且部分参数使用后有越过年终GDP数据的现象，**待更新：季度GDP数据转为月度GDP数据**。
 
+---
+### 抽样
+2021/12/25 upload 🦾
+- 有效抽样的主要原理是：如果抽样是有代表性的，则使用抽样样本估计总体。注：代表性：抽样样本近似地具有与元数据集相同的（感兴趣的）性质。
+- 概率抽样方法：（房祥忠《大数据探索性分析》）
+  1. [x] 简单随机抽样 Simple Random Sampling
+  2. [x] 分层随机抽样 Stratified Random Sampling
+  3. [ ]整群抽样、聚类抽样 Cluster Sampling 🧠 **Work on Progress**
+  4. [x] 系统抽样 Systematic Sampling
+  5. [ ]多阶段采样 🦾🧠 **Work on Progress**
+- 非概率抽样方法：
+  1. 便利抽样
+  2. 滚雪球抽样
+  3. 判断抽样
+  4. 配额抽样
+
+
