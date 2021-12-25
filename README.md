@@ -1,8 +1,8 @@
 # Data-Statistics
 Codes for data preprocessing before creating models by using Statistics knowleges.
 ---
-- <font color='#00338D'>灵感来源于：大数据探索性分析，认识到数据探索性分析以及数据预处理对构建模型的重要性。</font>
-- <font color='red'>统计学很重要！！！</font>
+- <font color='#00338D'>灵感来源于：大数据探索性分析，认识到数据探索性分析以及数据预处理对构建模型的重要性。</font></div>
+-  <div align="center"><font color='red'>统计学很重要！！！</font></div>
 ---
 ## 相关概念引入，用于解释Data ∞ Statistics 的逻辑和supporting。
 1. Data Mining 概念
