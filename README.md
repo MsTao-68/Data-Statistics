@@ -75,5 +75,25 @@ Codes for data preprocessing before creating models by using Statistics knowlege
   2. 滚雪球抽样
   3. 判断抽样
   4. 配额抽样
+---
 
-
+## 数据分析方法
+1. [x] 因子分析法（Python版） 
+##### 主成分分析和因子分析对比
+- 原理对比
+    - PCA: 寻找原有自变量的线性组合，取出线性关系影响较大的原始数据作为主成分
+    - FA: 使得所有自变量可以通过若干个因子（中间变量）被观察到
+- 数据分析流程
+   1. 数据标准化
+   2. Adequancy Test（充分性检测：KMO & 巴特利特球形检测）
+   3. 协方差矩阵（相关系数矩阵）
+   4. 特征值 & 特征向量
+   5. 主成分个数（因子）
+   6. 方差，贡献率，累计贡献率
+   7. 因子分析
+- packages(调包很简单，原理🤯）
+  - import numpy as np
+  - import pandas as pd
+  - from sklearn.preprocessing import MinMaxScaler, StandardScaler
+  - import numpy.linalg as nlg
+  - from factor_analyzer import FactorAnalyzer, calculate_kmo, calculate_bartlett_sphericity,factor_analyzer,Rotator
