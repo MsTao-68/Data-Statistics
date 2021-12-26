@@ -96,4 +96,27 @@ Codes for data preprocessing before creating models by using Statistics knowlege
   - import pandas as pd
   - from sklearn.preprocessing import MinMaxScaler, StandardScaler
   - import numpy.linalg as nlg
+  - from factor_analyzer import factor_analyzer,Rotator
   - from factor_analyzer import FactorAnalyzer, calculate_kmo, calculate_bartlett_sphericity,factor_analyzer,Rotator
+2. [x] 主成分分析法（Python版）
+##### Principal Component Analysis 
+- 综述：数据降维并尽可能减少信息损失，主成分就是方差贡献率大的自变量
+- 理论：通过正交变换将一组可能存在相关性的自变量转换为线性不相关的自变量（即主成分）
+- 步骤：
+    0. repeat{
+    1. Data overview & preprocessing, 去除可以分析出来的不相关列以及影响不大的列
+    2. 计算相关系数矩阵或者协方差矩阵，取出n_largest的自变量作为主成分
+        - 注：数据标准化后用corr(), 数据未标准化用cov()
+    3. 判断是否存在明显的多重共线性
+        - 注：多重共线性：自变量间存在一个变量可以表示为多个变量的线性组合
+        - VIF方差膨胀系数：statsmodels.stats.outliers_influence.variance_inflation_factor() }until VIF < 0.7
+    4. 主成分适应性检测：KMO , batelette球形检测
+    5. 得到主成分表达式并确定主成分个数，选取主成分
+- Packages:
+   - import pandas as pd
+   - import numpy as np
+   - from numpy.linalg import eig
+   - from sklearn.datasets import load_iris
+   - import matplotlib.pyplot as plt
+   - from factor_analyzer import factor_analyzer,Rotator
+   - from factor_analyzer import FactorAnalyzer, calculate_kmo, calculate_bartlett_sphericity
