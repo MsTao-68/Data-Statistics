@@ -120,3 +120,26 @@ Codes for data preprocessing before creating models by using Statistics knowlege
    - import matplotlib.pyplot as plt
    - from factor_analyzer import factor_analyzer,Rotator
    - from factor_analyzer import FactorAnalyzer, calculate_kmo, calculate_bartlett_sphericity
+3. [x] 独立成分分析法 （Python版）Independent Components Analysis
+   1. Background: 
+       1. 鸡尾酒会混合音源分离提取；数据降维
+       2. 假设：
+          - 成分独立
+          - 线性混合
+          - 非高斯性分布
+              1. Kurtosis 四阶累积量
+              2. Negentropy 负熵
+              3. 互信息最小化
+       3. 不确定性
+   3. 对比PCA
+       - PCA: 降维，但对高斯分布样本有效；ICA: 降维，样本服从非高斯性分布
+       - PCA将数据映射到新的低维空间，并且各维度不相关；ICA是寻找数据可能成分组，用于提取特征
+   4. 数据分析流程
+       1. 中心化和白化（减少特征相关性；特征具有相同方差（即协方差阵是单位阵))
+       2.  - **Source from：WeChat Public Account: 脑机接口研习社**：脑电图和脑磁图(EEG/MEG)的数据分析
+   ![output_12_1](https://user-images.githubusercontent.com/84648756/147399697-54aba29d-dd82-4d0b-9676-123b9ccb7c07.png)
+   ![output_9_0](https://user-images.githubusercontent.com/84648756/147399707-0c5b35fc-096a-4dd9-b978-e0edf917a7d6.png)
+
+
+
+   
